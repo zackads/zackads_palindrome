@@ -1,4 +1,6 @@
-$LOAD_PATH.unshift File.expand_path("../lib", __dir__)
-require "zackads_palindrome"
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+require 'zackads_palindrome'
 
-require "minitest/autorun"
+require 'minitest/autorun'
+require 'minitest/reporters'
+Minitest::Reporters.use!
