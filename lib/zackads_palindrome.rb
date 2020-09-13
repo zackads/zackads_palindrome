@@ -1,6 +1,13 @@
-require "zackads_palindrome/version"
+require 'zackads_palindrome/version'
 
-module ZackadsPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+class String
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+  private
+
+  def processed_content
+    downcase
+  end
 end
