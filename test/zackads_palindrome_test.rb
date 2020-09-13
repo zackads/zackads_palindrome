@@ -6,7 +6,7 @@ class ZackadsPalindromeTest < Minitest::Test
   end
 
   def test_non_palindrome
-    assert !'apple'.palindrome?
+    refute 'apple'.palindrome?
   end
 
   def test_literal_palindrome
@@ -14,10 +14,10 @@ class ZackadsPalindromeTest < Minitest::Test
   end
 
   def test_mixed_case_palindrome
-    assert 'Racecar'.palindrome?
+    assert 'RaceCar'.palindrome?
   end
 
   def test_palindrome_with_punctuation
-    assert 'Madam, I\'m Adam'.palindrome?
+    assert 'Madam, I\'m Adam.'.palindrome?
   end
 end

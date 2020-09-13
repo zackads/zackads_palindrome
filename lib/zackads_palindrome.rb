@@ -8,6 +8,6 @@ class String
   private
 
   def processed_content
-    downcase
+    scan(/[a-z]/i).join.downcase
   end
 end
